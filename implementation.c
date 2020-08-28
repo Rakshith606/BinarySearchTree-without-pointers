@@ -60,6 +60,7 @@ int get_to_root(FILE *fp,int choice){
 	else
 		preorder(node,fp);
 	printf("\b\n"); // \b to remove space after printing last element
+	return 0; 
 }
 void display_inorder(FILE *fp){
 	get_to_root(fp,1); //choice 1 denotes preorder in get_to_root
